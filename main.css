@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+/* primary */
+--softblue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+
+/* neutral */
+--dark-blue1: hsl(217, 54%, 11%);
+--dark-blue2: hsl(216, 50%, 16%);
+--dark-blue3: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--dark-blue1);
+    font-size: 18px;
+    color: var(--softblue);
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    background: var(--dark-blue2);
+    padding: 30px;
+    line-height: 2;
+    border-radius: 20px;
+    width: 35%;
+    box-shadow: .5rem .5rem 50px black;
+}
+
+.equilibrium__img {
+    width: 100%;
+}
+
+.equilibrium__img img{
+    text-align: center;
+    border-radius: 10px;
+}
+
+h3,
+span {
+    color: var(--white);
+}
+
+h3:hover,
+span:hover,
+.price {
+    color: var(--cyan);
+}
+
+.card__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card__profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card__profile img {
+    border: 2px solid var(--white);
+    border-radius: 50% ;
+}
